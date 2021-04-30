@@ -3,7 +3,12 @@ function val(id){
 }
 function ans(){
     var res=document.getElementById('answer').value;
-    var finalResult=eval(res);
+    if (res.length==0){
+        var finalResult='0'
+    }
+    else{
+        var finalResult=eval(res);
+    }
     document.getElementById('answer').value=finalResult;
 }
 function clea(){
